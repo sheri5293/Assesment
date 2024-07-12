@@ -1,3 +1,4 @@
+// eslint-disable-next-line no-unused-vars
 import React, { useState } from "react";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
@@ -97,7 +98,7 @@ const SignupForm = () => {
               position: "top-center",
               autoClose: 3000,
               onClose: () => {
-                window.location.href = "/userlist"; // Replace with your actual route
+                window.location.href = "/MainComponent";
               },
             });
           }

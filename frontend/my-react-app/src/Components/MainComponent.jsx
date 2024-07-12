@@ -1,4 +1,3 @@
-// eslint-disable-next-line no-unused-vars
 import React, { useState, useEffect } from "react";
 import "../MainComponent.css"; // Assuming styles are defined in styles.css
 
@@ -62,9 +61,6 @@ const MainComponent = () => {
             <button className="small-button">Send broadcast</button>
           </div>
 
-          {/* Error Message */}
-          {error && <div className="error-message">{error}</div>}
-
           {/* Chats */}
           <div className="chat-list">
             {filteredChats.map((chat, index) => (
@@ -79,6 +75,10 @@ const MainComponent = () => {
                 <div className="chat-details">
                   <div className="text-head">
                     <h4>{chat.name}</h4>
+                    <p className="time unread">{chat.time}</p>
+                  </div>
+                  <div className="text-message">
+                    <p>{chat.message}</p>
                   </div>
                 </div>
               </div>
